@@ -59,7 +59,7 @@ class ExcelPipeline(object):
         self.wb = Workbook()
         self.ws = self.wb.active
         self.ws.append(['标题', '作者', '简介'])
-        self.file_name = "/imgs_tmp/dangdangBook.xlsx"
+        self.file_name = "dangdangBook.xlsx"
 
     def process_item(self, item, spider):
         line = [item['title'], item['author'], item['detail']]

@@ -57,6 +57,6 @@ class FirstSpider(scrapy.Spider):
         # for next_url in self.page_url:
         #     yield Request(urljoin("http://category.dangdang.com", next_url), callback=self.parse)
 
-        for page in range(1,2):
+        for page in range(1,1):
             url = f'http://category.dangdang.com/pg{page}-cp01.24.13.00.00.00.html'
             yield Request(url, callback=self.parse)
